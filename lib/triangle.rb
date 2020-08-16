@@ -34,6 +34,8 @@ class Triangle
       :isosceles
     elsif @scalene == @equilateral && @equilateral != @isosceles
       :isosceles
+    elsif @scalene == @isosceles && @equilateral != @isosceles
+      :isosceles
     end   #end if
     
   end
