@@ -26,7 +26,7 @@ class Triangle
       begin
         raise TriangleError
       rescue TriangleError => error
-      puts ((@equilateral+@isosceles) (@equilateral+@scalene) (@isosceles+@scalene) )
+      puts "#{(@equilateral+@isosceles)} #{(@equilateral+@scalene)} #{(@isosceles+@scalene)}"
       puts "two sides big"
           puts error.message
       end
