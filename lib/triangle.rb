@@ -22,7 +22,7 @@ class Triangle
           puts error.message
       end
       
-    elsif (@equilateral+@isosceles) >= @scalene || (@equilateral+@scalene) >= @isosceles || (@isosceles+@scalene) >= @equilateral
+    elsif (@equilateral+@isosceles) <= @scalene || (@equilateral+@scalene) <= @isosceles || (@isosceles+@scalene) <= @equilateral
       begin
         raise TriangleError
       rescue TriangleError => error
