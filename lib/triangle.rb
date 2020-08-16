@@ -16,19 +16,9 @@ class Triangle
     
     if @equilateral <= 0 || @isosceles <= 0 || @scalene <= 0
       raise TriangleError
-      # begin
-      #   raise TriangleError
-      # rescue TriangleError => error
-      #     puts error.message
-      # end
-      
+
     elsif (@equilateral+@isosceles) <= @scalene || (@equilateral+@scalene) <= @isosceles || (@isosceles+@scalene) <= @equilateral
       raise TriangleError
-      # begin
-      #   raise TriangleError
-      # rescue TriangleError => error
-      #     puts error.message
-      # end
       
     elsif @equilateral == @isosceles && @isosceles == @scalene
       :equilateral
