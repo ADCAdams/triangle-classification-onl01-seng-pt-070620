@@ -15,20 +15,20 @@ class Triangle
   def kind 
     
     if @equilateral <= 0 || @isosceles <= 0 || @scalene <= 0
-      begin
-        raise TriangleError
-      rescue TriangleError => error
-          puts error.message
-      end
+      raise TriangleError
+      # begin
+      #   raise TriangleError
+      # rescue TriangleError => error
+      #     puts error.message
+      # end
       
     elsif (@equilateral+@isosceles) <= @scalene || (@equilateral+@scalene) <= @isosceles || (@isosceles+@scalene) <= @equilateral
-      begin
-        raise TriangleError
-      rescue TriangleError => error
-      #puts "#{(@equilateral+@isosceles)} #{(@equilateral+@scalene)} #{(@isosceles+@scalene)}"
-      puts "two sides big"
-          puts error.message
-      end
+      raise TriangleError
+      # begin
+      #   raise TriangleError
+      # rescue TriangleError => error
+      #     puts error.message
+      # end
       
     elsif @equilateral == @isosceles && @isosceles == @scalene
       :equilateral
