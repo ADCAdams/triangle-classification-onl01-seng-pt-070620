@@ -18,7 +18,7 @@ class Triangle
       begin
         raise TriangleError
       rescue TriangleError => error
-          puts "zero size"
+
           puts error.message
       end
       
