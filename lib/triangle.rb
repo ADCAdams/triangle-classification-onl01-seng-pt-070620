@@ -12,11 +12,16 @@ class Triangle
   
   def kind 
     
+    if @equilateral >= 0 ||
+    
   end
+  
   
   class TriangleError < StandardError
     # triangle error code
-    
+    def message
+      "you're triangle is invalid"
+    end
     
   end
   
