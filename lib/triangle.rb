@@ -18,8 +18,7 @@ class Triangle
       rescue PartnerError => error
           puts error.message
       end
-    else
-      
+    elsif (@equilateral+@isosceles) < @scalene ||
     
   end
   
