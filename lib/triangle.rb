@@ -18,13 +18,15 @@ class Triangle
       rescue PartnerError => error
           puts error.message
       end
-    elsif (@equilateral+@isosceles) < @scalene || (@equilateral+@scalene) < @isosceles || (@isosceles+@scalene) < @equilateral
+    elsif (@equilateral+@isosceles) >= @scalene || (@equilateral+@scalene) >= @isosceles || (@isosceles+@scalene) >= @equilateral
       begin
         raise PartnerError
       rescue PartnerError => error
           puts error.message
       end
-    else
+    elsif @equilateral == @isosceles == @scalene
+      :equilateral
+    elsif 
       
     end   #end if
     
