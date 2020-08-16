@@ -14,15 +14,15 @@ class Triangle
     
     if @equilateral <= 0 || @isosceles <= 0 || @scalene <= 0
       begin
-        raise PartnerError
-      rescue PartnerError => error
+        raise TriangleError
+      rescue TriangleError => error
           puts error.message
       end
       
     elsif (@equilateral+@isosceles) >= @scalene || (@equilateral+@scalene) >= @isosceles || (@isosceles+@scalene) >= @equilateral
       begin
-        raise PartnerError
-      rescue PartnerError => error
+        raise TriangleError
+      rescue TriangleError => error
           puts error.message
       end
       
