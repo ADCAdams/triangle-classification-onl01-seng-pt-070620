@@ -18,6 +18,7 @@ class Triangle
       begin
         raise TriangleError
       rescue TriangleError => error
+          puts "zero size"
           puts error.message
       end
       
@@ -25,6 +26,7 @@ class Triangle
       begin
         raise TriangleError
       rescue TriangleError => error
+      puts "two sides big"
           puts error.message
       end
       
