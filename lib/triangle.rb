@@ -26,7 +26,7 @@ class Triangle
           puts error.message
       end
       
-    elsif @equilateral == @isosceles == @scalene
+    elsif @equilateral == @isosceles && @isosceles == @scalene
       :equilateral
     elsif @isosceles != @equilateral && @isosceles != @scalene && @equilateral != @scalene
       :scalene
