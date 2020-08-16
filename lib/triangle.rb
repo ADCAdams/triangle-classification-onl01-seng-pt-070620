@@ -12,7 +12,8 @@ class Triangle
   
   def kind 
     
-    if @equilateral >= 0 ||
+    if @equilateral >= 0 || @isosceles >= 0 || @scalene >= 0
+      
     
   end
   
