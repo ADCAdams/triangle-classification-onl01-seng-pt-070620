@@ -30,8 +30,10 @@ class Triangle
       :equilateral
     elsif @isosceles != @equilateral && @isosceles != @scalene && @equilateral != @scalene
       :scalene
-    elsif
-      
+    elsif @isosceles == @equilateral && @equilateral != @scalene
+      :isosceles
+    elsif @scalene == @equilateral && @equilateral != @isosceles
+      :isosceles
     end   #end if
     
   end
