@@ -8,6 +8,8 @@ class Triangle
     @equilateral = equi
     @isosceles = iso
     @scalene = scal 
+    
+    puts "equi is #{equi} iso is #{iso} scal is #{scal}"
   end
   
   def kind 
